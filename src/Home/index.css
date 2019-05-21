@@ -1,0 +1,10 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  min-width: 600px;
+  min-height: 600px;
+  max-width: 1920px;
+  max-height: 1080px;
+  margin: 0 auto;
+  background: var(--light-grey);
+}

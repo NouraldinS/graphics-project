@@ -1,0 +1,73 @@
+.wrapper {
+  width: calc(100% - var(--options-pane-width));
+  margin-left: var(--options-pane-width);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .tabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  padding: 20px 10px;
+  min-height: 300px;
+  width: var(--options-pane-width);
+  background: var(--bluish);
+  box-shadow: 0 0 5px var(--dark-grey);
+}
+
+.wrapper .options {
+  padding: 10px 15px;
+  min-height: 60px;
+}
+
+.wrapper .options ul {
+  display: flex;
+}
+
+.wrapper .options ul li {
+  padding-right: 5px;
+}
+
+.wrapper .view {
+  box-shadow: 0 0 5px;
+  height: 100%;
+  margin: 10px;
+}
+
+.wrapper .options button {
+  background: #3DAEAE;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+}
+
+.wrapper .options button:hover {
+  background: #ABE2E2;
+}
+
+.wrapper .options button.active {
+  background: #FFA459;
+}
+
+.wrapper .tabs button {
+  width: calc(var(--options-pane-width) - 40px);
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background: #B62D01;
+  color: #FFF;
+  border: none;
+  outline: none;
+}
+
+.wrapper .tabs button:hover {
+  background: #755540;
+}
+
+.wrapper .tabs button.active {
+  background: #88D1F1;
+  color: #000;
+}
